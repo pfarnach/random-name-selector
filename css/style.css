@@ -8,29 +8,30 @@
 /*
 / title
 */
-.title {
-	font-weight: bold;
+input[type='submit'] {
+	font-size: 16px;
+	text-transform: capitalize;
 }
 
 /*
 / checkboxes
 */
 input[type='checkbox'] {
-	margin: 5px 5px 0 0;
+	margin: 5px 5px 0 60px;
 }
 
 /*
 / selector list
 */
 .name-container {
-    width: 150px;
+    width: 140px;
 }
 
 li {
 	text-align: center;
     list-style: none;
-    margin: 3px 0 0;
-    padding: 4px 0;
+    margin: 0;
+    padding: 2px 0;
     font-weight: bold;
     border-radius: 4px;
 }

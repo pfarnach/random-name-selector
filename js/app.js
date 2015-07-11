@@ -13,20 +13,20 @@
   names = ['Eric', 'Tal', 'Nick L', 'Arcy', 'Keelan', 'Pat', 'Chris', 'Forest', 'Ken', 'Shawn', 'Nick DY', 'Randall', 'Tim'];
 
   submitBtn = document.getElementById('submit-list');
-  listContainer = document.getElementById('name-container-list');
   checkboxContainer = document.getElementById('checkbox-container');
+  listContainer = document.getElementById('name-container-list');
 
   submitBtn.addEventListener('click', getPresentNames, false);
 
+  // set/reset variables on click
   function init() {
     var startingIndex;
 
     startingIndex = Math.floor(Math.random() * listContainer.children.length);  // randomly choose starting index
     listContainer.children[startingIndex].className = 'selected';
 
-    selectionDuration = (Math.random() * 3000) + 3000;
+    selectionDuration = (Math.random() * 3000) + 2500;
     counterIncrementer = (Math.random() / 8) + 1.1;
-    selectionDuration = (Math.random() * 2000) + 4000;
 
     elapsedTime = 0;
     counter = 20;
@@ -70,7 +70,7 @@
   function drawSelector(names) {
 
     // make sure selector is empty
-    while( listContainer.hasChildNodes() ){
+    while (listContainer.hasChildNodes()) {
       listContainer.removeChild(listContainer.lastChild);
     }
 
