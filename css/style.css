@@ -1,0 +1,46 @@
+/*
+/ main
+*/
+.container {
+	margin-top: 50px;
+}
+
+/*
+/ title
+*/
+.title {
+	font-weight: bold;
+}
+
+/*
+/ checkboxes
+*/
+input[type='checkbox'] {
+	margin: 5px 5px 0 0;
+}
+
+/*
+/ selector list
+*/
+.name-container {
+    width: 150px;
+}
+
+li {
+	text-align: center;
+    list-style: none;
+    margin: 3px 0 0;
+    padding: 4px 0;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.selected {
+    background-color: #F3B700;
+}
+
+.winner {
+    background-color: #E57C04;
+    color: white;
+}
+
